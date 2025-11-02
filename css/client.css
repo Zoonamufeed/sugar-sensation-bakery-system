@@ -1,0 +1,23 @@
+/* Main page(home) body count
+.rating{
+    display: flex;
+    border:2px solid orange;
+    background-color: rgb(255, 234, 195);
+    height: 250px;
+}
+.experience{
+    background-color: white;
+    width:25%;
+    height:20%;
+    border-radius: 3px;
+    box-shadow: 0 4px 6px rgba(4, 4, 4, 0.1);
+}
+#countLabel1, #countLabe12, #countLabel3, #countLabel4{
+    text-align: center;
+    font-size:26px;
+    font-weight: bold;
+}
+.rating span{
+    text-align: center;
+    font-size:26px;
+}*/

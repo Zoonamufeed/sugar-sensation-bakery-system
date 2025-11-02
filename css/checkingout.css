@@ -1,0 +1,224 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+ }
+
+/*checkout CSS*/
+.checkout-form form{
+    padding:2rem;
+    border-radius: .5rem;
+    background-color: #eee;
+ }
+.heading{
+    font-size: 2.5rem;
+}
+ .checkout-form form .flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap:1.5rem;
+ }
+ 
+ .checkout-form form .flex .inputBox{
+    flex:1 1 40rem;
+ }
+ 
+ .checkout-form form .flex .inputBox span{
+    font-size: 1.5rem;
+    color:black;
+    
+ }
+ 
+ .checkout-form form .flex .inputBox input,
+ .checkout-form form .flex .inputBox select{
+    width: 100%;
+    background-color: white;
+    font-size: 1.5rem;
+    color:black;
+    border-radius: 0.5rem;
+    margin:1rem ;
+    padding:1.2rem 1.4rem;
+    text-transform: none;
+    border:0.1rem solid #999;
+    
+
+ }
+.btn_now{
+    display: block;
+    width: 50%;
+    text-align: center;
+    background-color: orange;
+    color:black;
+    font-size: 1.7rem;
+    padding:1.2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 0 auto;
+}
+.btn_now:hover{
+    background-color: orange;
+    color:white;
+ }
+ 
+/*check out display total css*/
+.display-order{
+    max-width: 50rem;
+    background-color: white;
+    border-radius: .5rem;
+    text-align: center;
+    padding:1.5rem;
+    margin:0 auto;
+    margin-bottom: 2rem;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    border:0.1rem solid #999;
+ }
+ 
+ .display-order span{
+    display: inline-block;
+    border-radius: .5rem;
+    background-color: #eee;
+    padding:.5rem 1.5rem;
+    font-size: 1.8rem;
+    color:black;
+    margin:.5rem;
+ }
+ 
+ .display-order span.grand-total{
+    width: 100%;
+    background-color: red;
+    color:white;
+    padding:1rem;
+    margin-top: 1rem;
+    font-size: 1.8rem;
+ }
+
+ /*order message*/
+body .order-message-container { 
+    position: fixed;
+}
+.order-message-container{
+    position: fixed;
+    top:0; left:0;
+    height: 100vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1100;
+    background-color: rgba(0,0,0,.7);
+    width: 100%;
+}
+ 
+.order-message-container::-webkit-scrollbar{
+    width: 1rem;
+}
+ 
+.order-message-container::-webkit-scrollbar-track{
+    background-color: rgba(0,0,0,.7);
+}
+ 
+.order-message-container::-webkit-scrollbar-thumb{
+    background-color: orange;
+}
+ 
+.order-message-container .message-container{
+    width: 50rem;
+    background-color: white;
+    border-radius: .5rem;
+    padding:2rem;
+    text-align: center;
+}
+ 
+.order-message-container .message-container h3{
+    font-size: 2rem;
+    color:black;
+}
+ 
+.order-message-container .message-container .order-detail{
+    background-color: #eee;
+    border-radius: .5rem;
+    padding:1rem;
+    margin:1rem 0;
+}
+ 
+.order-message-container .message-container .order-detail span{
+    background-color:white;
+    border-radius: .5rem;
+    color:black;
+    font-size: 1.5rem;
+    display: inline-block;
+    padding:1rem 1.5rem;
+    margin:1rem;
+}
+ 
+.order-message-container .message-container .order-detail span.total{
+    display: block;
+    background: red;
+    color:white;
+}
+ 
+.order-message-container .message-container .customer-details{
+    margin:1.5rem 0;
+ }
+ 
+.order-message-container .message-container .customer-details p{
+    padding:1rem 0;
+    font-size: 1.5rem;
+    color:black;
+}
+ 
+.order-message-container .message-container .customer-details p span{
+    color:rgb(186, 121, 0);
+    padding:0 .5rem;
+    text-transform: none;
+}
+.btn{
+    background-color: orange;
+    color:black;
+    padding:1rem 1.5rem;
+    margin:1rem;
+    font-size:1.5rem;
+}
+.btn:hover{
+    color:white;
+}
+
+/* Card Details Section */
+#card-details {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+/* Align individual input boxes */
+#card-details .inputBox {
+    flex: 1 1 40rem;
+}
+
+#card-details .inputBox span {
+    font-size: 1.5rem;
+    color: black;
+}
+
+#card-details .inputBox input {
+    width: 100%;
+    background-color: white;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 0.5rem;
+    margin: 1rem 0;
+    padding: 1.2rem 1.4rem;
+    text-transform: none;
+    border: 0.1rem solid #999;
+}
+
+ 

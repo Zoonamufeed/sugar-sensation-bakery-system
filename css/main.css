@@ -1,0 +1,524 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+
+}  
+ 
+ .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:white;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.196);
+    border-radius: 8px;
+ }
+.navbar .logo-container {
+    text-align: center;
+}
+
+.navbar .logo-container img {
+    height: 100px;
+    width:150px;
+       
+}
+.navbar .nav-links {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.navbar, .nav-links a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: bold;
+}
+.navbar .right-nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    width:400px;
+}
+.navbar .right-nav img {
+    height: 20px;
+    width: auto;
+}
+.form-inline{
+    display: flex;
+     align-items: center;
+      gap: 5px;
+}
+.btn{
+    font-size: 12px;
+    font-weight:bolder;
+    border:0.2px solid black;
+}
+.btn-default{
+    font-size: 14px;
+    border:0.2px solid black;
+    padding: 2px 3px;
+    border-radius: 2px;
+}
+.right-nav a, 
+.right-nav i, 
+.right-nav img {
+    color: black; 
+}
+ a:hover, 
+.right-nav i:hover, 
+.right-nav img:hover {
+    color: orange; 
+   
+}
+
+
+/*shhoping cart notification*/
+.cart {
+    position: relative; 
+    display: inline-block;
+}
+
+.cart-count {
+    position: absolute;
+    top: -10px; 
+    right: -10px; 
+    background-color: orange;
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+    border-radius: 50%;
+    padding: 4px 8px;
+    min-width: 20px; 
+    text-align: center;
+    line-height: 1;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+}
+/*carousel css*/
+.carousel {
+    width: 100%; 
+    height: 500px;
+    overflow: hidden;
+}
+.carousel-item img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    object-position: center center; 
+}
+
+/*footer css*/
+footer{
+    color:white;
+    font-size:16px;
+    background-color:black;
+    padding-top:40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.196);
+    width: 100%;
+
+}
+.container{
+    width:1140px;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+}
+.footer-container{
+    width:26%;
+    padding:10px 30px;
+}
+.footer-container:first-of-type{
+    width:40%;
+    padding: 10px 0;
+}
+h3{
+    font-size:28px;
+    margin-bottom:15px;
+    text-align:center;
+}
+.footer-container p{
+    margin:auto;
+    padding:7px;
+    max-width: 300px;
+}
+
+.footer-container ul{
+    text-align:center;
+} 
+.list{
+    padding:0;
+}
+.list li{
+    width:auto;
+    text-align:center;
+    list-style-type: none;
+    padding:7px;
+    position: relative;
+}
+.list a{
+    color:white;
+    text-decoration: none;
+}
+.list li::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:100%;
+    width:0;
+    height:2px;
+    background:orange;
+    
+}
+.list li:hover::before{
+    width:70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color:white;
+    font-size:25px;
+}
+.list a:hover{
+    color:orange;
+}
+.social-icons i:hover{
+    color:orange;
+}
+.footer-bottom{
+    background:orange;
+    text-align: center;
+    padding:10px 0;
+    margin-top:50px;
+}
+.copy-rights{
+    color:black;
+    margin:0;
+    font-size:16px;
+    padding:7px;
+}
+
+/*chatbot*/
+.chatbot-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .chatbot-button img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+    
+  /* Chatbot container */
+  #chatbot-container {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 350px;
+    display: none;
+    z-index: 1000;
+  }
+  
+  .chat-hidden {
+    display: none;
+  }
+  
+  .close-chatbot {
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+  }
+  
+  .chat-container {
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  .imgchatbot{
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+  }
+  .chat-header {
+    background-color: orange;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .chat-box {
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .chat-box .message {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: 80%;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+
+  }
+  
+  .chat-box .user {
+    background-color: #e0e0e0;
+    align-self: flex-end;
+    text-align: right;
+    font-family: Arial, sans-serif;
+
+  }
+  
+  .chat-box .bot {
+    background-color: orange;
+    color: black;
+  }
+  
+  .chat-input {
+    display: flex;
+    border-top: 1px solid #ddd;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+  }
+  
+  .chat-input button {
+    padding: 10px 15px;
+    border: none;
+    background-color: orange;
+    color:black;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .chat-input button:hover {
+    background-color: orange;
+  }
+
+  
+
+  /*signup*/
+  #signup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#signup-container:target {
+    display: flex;
+}
+#signup {
+    width: 350px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+
+fieldset{
+    display: flex;
+    gap:10px;
+    flex-direction: column;
+    padding: 20px;
+    font-size:18px;
+    margin:0 auto;
+    border-radius:40px;
+}
+.signup-header{
+   font-size: 16px;
+   padding: 10px;
+   text-align: center;
+   font-weight: 600;
+}
+.close-signup{
+    position:absolute;
+    top:10px;
+    right:10px;
+    border:none;
+    background-color:white;
+    font-weight: bolder;
+    padding: 0 5px;
+    cursor: pointer;
+    color:black;   
+    text-decoration: none;
+}
+fieldset i {
+    display: flex;
+    align-items: center;
+}
+.signup-button{
+    background-color: orange;
+    border:none;
+    margin-top: 10px;
+}
+hr{
+    border:1px solid rgb(200, 197, 197);
+}
+.signup-footer{
+    text-align: center;
+    font-size: 16px;
+}
+i input {
+    font-weight: 100;
+    height: 30px;
+} 
+#password {
+    width:240px;
+}
+/* Password Field */
+.password-container {
+    display: flex;
+    align-items: center;
+    gap:10px;
+    position: relative;
+}
+
+/* Eye Icon Inside Password Input */
+.password-container .toggle-password {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Signup Button */
+.signup-button {
+    background-color: orange;
+    border: none;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Main page(home) body count*/
+.ratings{
+    display: flex;
+    width:85%;
+    margin: 10px  auto;
+    justify-content: space-evenly;
+    align-items:center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    background-color: white;
+    border-radius:10px;
+}
+.experience{
+    background-color: white;
+    width:200px;
+    height:160px;
+    border-radius: 3px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    margin:20px;
+    background-color: rgb(255, 234, 195);
+    text-align: center;
+    transition: transform 1.5s ease;
+}
+#countLabel1, #countLabel2, #countLabel3, #countLabel4{
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    padding: 2px;
+}
+.ratings i{
+    font-size:50px;
+    text-shadow: 2px 2px 4px #000000;
+    color: orange;
+    padding-top: 20px;
+}
+.ratings p{
+    font-size:20px;
+    padding: 5px;
+}
+.experience:hover{
+    background-color: rgb(255, 228, 177);
+    transform: scale(1.2) ;
+}
+/* popular products*/
+.pop_heading{
+   text-align: center;
+   font-family: "Monotype Corsiva", cursive;
+   color:black;
+   font-weight: bold;
+   font-size: 60px;
+}
+.popular{
+    display: flex;
+    width:95%;
+    margin: 10px  auto;
+    justify-content: space-evenly;
+    align-items:center;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.5);
+    height:400px;
+    background-color: white;
+    border-radius:10px;
+}
+.pop{
+    background-color:rgb(255, 234, 195);
+    width:300px;
+    height:350px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 1.5s ease;
+    border-radius:10px;
+}
+.pop img{
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    border-radius:10px;
+    padding: 10px;
+}
+.pop img:hover{
+    background-color: rgb(255, 234, 195);
+    transform: scale(1.2) ;
+}
+.body{
+    background-color: rgb(255, 209, 124);
+    padding: 5px;
+}

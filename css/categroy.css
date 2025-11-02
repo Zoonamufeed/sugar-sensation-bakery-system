@@ -1,0 +1,139 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+ }
+/* Category Form Styling */
+.add-category-form {
+    max-width: 50rem;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.add-category-form h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+    text-transform: uppercase;
+}
+
+.add-category-form .box {
+    text-transform: none;
+    padding: 1.2rem 1.4rem;
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 0.5rem;
+    background-color: white;
+    margin: 1rem 0;
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+/* Buttons Styling */
+.add-category-form .btn, 
+.delete-btn {
+    display: block;
+    width: 50%;
+    text-align: center;
+    background-color: orange;
+    color: white;
+    font-size: 1.7rem;
+    padding: 0.5rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 1rem auto;
+    border: none;
+}
+
+.add-category-form .btn:hover, 
+.delete-btn:hover {
+    background-color: orange;
+    color: black;
+}
+
+/* Table Styling */
+.display-product-table table{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;    
+}
+.display-product-table table thead th{
+    padding:1.5rem;
+    font-size: 1.5rem;
+    background-color: rgba(255, 166, 0, 0.638);
+    color:black;
+    border:2px solid white;
+ }
+ 
+ .display-product-table table td{
+    padding:1.5rem;
+    font-size: 1.5rem;
+    color:black;
+ }
+ 
+ .display-product-table table td:first-child{
+    padding:0;
+ }
+ 
+ .display-product-table table tr:nth-child(even){
+    background-color: #eee;
+ }
+ 
+ .display-product-table .empty{
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: #eee;
+    color:black;
+    font-size: 1.5rem;
+    padding:1.5rem;
+ }
+/* Delete Button */
+.delete-btn {
+    background-color: red;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* how to display message*/
+
+.message{
+   background-color: orange;
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 10000;
+   border-radius: .5rem;
+   padding: 1.5rem 2rem;
+   margin: 0 auto;
+   max-width: 1200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1.5rem;
+ }
+
+ .message span{
+    font-size: 2rem;
+    color:black;
+    background-color: orange;
+ }
+ 
+ .message i{
+    font-size: 2rem;
+    color:black;
+    cursor: pointer;
+ }
+ 
+ .message i:hover{
+    color:red;
+ }

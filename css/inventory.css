@@ -1,0 +1,184 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+section{
+    padding:2rem;
+}
+
+.option-btn,
+.delete-btn,.btn{
+   display:  inline-block !important;
+   width: 100% !important;
+   text-align: center !important;
+   background-color: orange !important;
+   color:white !important;
+   font-size: 1.7rem !important;
+   padding:0.5rem 3rem !important;
+   border-radius: .5rem;
+   cursor: pointer !important;
+   margin-top: 1rem !important;
+   border:none !important;
+}
+
+.option-btn:hover,
+.delete-btn:hover,.btn:hover{
+   background-color: orange !important;
+   color:black !important;
+}
+
+.option-btn i,
+.delete-btn i{
+   padding-right: .5rem !important;
+}
+
+.option-btn{
+   background-color:orange !important;
+}
+.delete-btn{
+   margin-top: 0;
+   background-color: red !important;
+}
+
+.add-inventory-form{
+    max-width: 50rem;
+    background-color: #eee;
+    border-radius: 0.5rem;
+    padding:2rem;
+    margin:0 auto;
+    margin-top:2rem;
+}
+.add-inventory-form h3{
+    font-size:2rem;
+    margin-bottom: 1rem;
+    color:black;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+}
+.add-inventory-form .box{
+    text-transform: none;
+    padding:1.2rem 1.4rem;
+    font-size: 1.5rem;
+    color:black;
+    border-radius: .5rem;
+    background-color: white;
+    margin:1rem 0;
+    width: 100%;
+}
+label{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-left: 2rem;
+    display: flex;
+    
+}
+
+.message{
+   background-color: orange;
+   position: sticky;
+   top: 0;
+   left: 0;
+   z-index: 10000;
+   border-radius: .5rem;
+   padding: 1.5rem 2rem;
+   margin: 0 auto;
+   max-width: 1200px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1.5rem;
+ }
+
+ .message span{
+    font-size: 2rem;
+    color:black;
+    background-color: orange;
+ }
+ 
+ .message i{
+    font-size: 2rem;
+    color:black;
+    cursor: pointer;
+ }
+ 
+ .message i:hover{
+    color:red;
+}
+/*table design display*/
+
+.displaytable table{
+    width: 80%;
+    margin:0 auto;
+    text-align: center;
+}
+ 
+.displaytable table thead th{
+    padding:1.5rem;
+    font-size: 1.8rem;
+    background-color:rgba(255, 166, 0, 0.638);
+    color:black;
+    border:2px solid white;
+}
+ 
+.displaytable table td{
+    padding:1.5rem;
+    font-size: 1.5rem;
+    color:black;
+ }
+ 
+.displaytable table td:first-child{
+    padding:0;
+}
+ 
+.displaytable table tr:nth-child(even){
+    background-color: #eee;
+}
+ 
+.displaytable .empty{
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: #eee;
+    color:black;
+    font-size: 1.5rem;
+    padding:1.5rem;
+}
+ 
+/*edit form container CSS*/
+
+.edit-form-container{
+    position: fixed;
+    top:0; left:0;
+    z-index: 1100;
+    background-color: rgba(0,0,0,.7);
+    padding:2rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+}
+.edit-form-container form{
+    width: 50rem;
+    border-radius: .5rem;
+    background-color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.edit-form-container form .box{
+    width: 100%;
+    background-color:#eee;
+    border-radius: .5rem;
+    margin:1rem 0;
+    font-size: 1.5rem;
+    color:black;
+    padding:1.2rem 1.4rem;
+    text-transform: none;
+}

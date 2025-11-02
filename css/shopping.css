@@ -1,0 +1,178 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+ }
+
+
+/*shopping cart css*/
+.shopping-cart table{
+    text-align: center;
+    width: 100%;
+ }
+ 
+ .shopping-cart table thead th{
+    padding:1.5rem;
+    font-size: 1.5rem;
+    color:black;
+    background-color: orange;
+    border:3px solid white;
+ }
+ 
+
+ .shopping-cart table tr td{
+    border-bottom: 0.1rem solid #999;
+    padding:1.5rem;
+    font-size: 1.5rem;
+    color:black;
+    border:3px solid white;
+ }
+ 
+ .shopping-cart table input[type="number"]{
+    border:0.1rem solid #999;
+    padding:1rem 2rem;
+    font-size: 1.5rem;
+    color:black;
+    width: 10rem;
+ }
+ 
+ .shopping-cart table input[type="submit"]{
+    padding:.5rem 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    background-color: orange;
+    color:white;
+    border-radius: 0.5rem;
+ }
+ 
+ .shopping-cart table input[type="submit"]:hover{
+    background-color:black;
+ }
+ 
+ .shopping-cart table .table-bottom{
+    background-color: #eee;
+ }
+ 
+ .option-btn,
+ .delete-btn{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: orange;
+    color:white;
+    font-size: 1.7rem;
+    padding:1.2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin-top: 1rem;
+ }
+ 
+ .option-btn:hover,
+ .delete-btn:hover{
+    background-color: orange;
+    color:black;
+ }
+ 
+ .option-btn i,
+ .delete-btn i{
+    padding-right: .5rem;
+ }
+ 
+ .option-btn{
+    background-color:orange;
+ }
+ 
+ .delete-btn{
+     margin-top: 0;
+     background-color: red;
+  }
+#proceedButton a{
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: orange;
+    text-decoration: none;
+    color:black;
+    font-size: 2rem;
+    padding:1.2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 1rem; 
+} 
+#proceedButton a:hover{
+    background-color:black;
+    color:white;
+}
+#proceedButton {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: orange;
+    text-decoration: none;
+    color:black;
+    font-size: 2rem;
+    padding:1.2rem 3rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    margin: 1rem; 
+} 
+#proceedButton :hover{
+    background-color:black;
+    color:white;
+}
+
+
+/*media queries*/
+
+@media (max-width:1200px){
+
+    .shopping-cart{
+       overflow-x: scroll;
+    }
+ 
+    .shopping-cart table{
+       width: 120rem;
+    }
+ 
+    .shopping-cart .heading{
+       text-align: left;
+    }
+ 
+    .shopping-cart .checkout-btn{
+       text-align: left;
+    }
+ 
+ }
+
+ @media (max-width:768px){
+
+    .display-product-table{
+       overflow-x: scroll;
+    }
+ 
+    .display-product-table table{
+       width: 90rem;
+    }
+ 
+ }
+ 
+ @media (max-width:450px){
+ 
+    html{
+       font-size: 50%;
+    }
+ 
+    .heading{
+       font-size: 3rem;
+    }
+ 
+    .products .box-container{
+       grid-template-columns: 1fr;
+    }
+ }
+ 

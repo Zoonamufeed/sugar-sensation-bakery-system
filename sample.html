@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link href="sample.css" rel="stylesheet"/>
+</head>
+<body>
+    <div id="signup-container">
+        <form id="sign-up" action="" method="post">
+            <div>
+                <p class="signup-header">Sign up with Sugar Sensation Bakery</p>
+                <a href="#" class="close-signup">X</a>
+            </div>
+            <hr>
+            <fieldset>
+                <i class="fas fa-user">
+                    <input type="text" name="name" placeholder="Full Name" required />
+                </i>
+                <i class="fa fa-phone">
+                    <input type="text" name="phone" placeholder="Phone Number" maxlength="10" minlength="10" required />
+                </i>
+                <i class="fa fa-envelope">
+                    <input type="email" name="email" placeholder="Email" required />
+                </i>
+                <i class="fa fa-lock">
+                    <input type="password" name="password" placeholder="Password" required />
+                    </i>
+                <button class="signup-button" type="submit" name="submit">Create Account</button>
+            </fieldset>
+            <hr>
+            <p class="signup-footer">Already have an account? <a href="#">Login</a></p>
+        </form>
+    </div>
+    <div class="login-container">
+        <form id="login" action="" method="post">
+         <div>
+            <fieldset class="login-fieldset">
+            <p class="login-header"> Login with Sugar Sensation Bakery</p>
+            <a href="#" class="close-login">X</a>         
+            </div>
+            <hr>
+            <i class="fa fa-envelope">
+                <input type="email" name="email" placeholder="Email" required />
+            </i>
+            <i class="fa fa-lock">
+                <input type="password" name="password" placeholder="Password" required />
+                </i>
+            <button class="login-button" type="submit" name="submit">Login</button>  
+            </fieldset>
+            <hr>
+            <p class="signup-footer"><a href="#">Click here</a> to register a new account</p>
+        </form>
+    </div>
+</body>
+</html>

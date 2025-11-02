@@ -1,0 +1,243 @@
+ *{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}   
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.btn-default{
+    font-size: 14px;
+    border:0.2px solid black;
+    padding: 2px 3px;
+    border-radius: 2px;
+}
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    background-color: white;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+.dropdown-content a:hover {background-color: #ddd;}
+  
+.dropdown:hover .dropdown-content {display: block;}
+  
+.dropdown:hover .dropbtn {background-color: white;} 
+
+/* Navbar css */
+.navbar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    background-color: white !important;
+    padding: 10px 20px !important;
+    flex-wrap: wrap !important;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2) !important;
+    border-radius: 8px !important;
+    min-height: 150px !important;  
+}
+
+.navbar .logo-container {
+    text-align: center;
+}
+
+.navbar .logo-container img {
+    height: 80px;
+    width: auto;
+}
+
+
+
+
+.navbar-nav {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+}
+.navbar a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #333;
+    font-weight: bold;
+}
+.navbar .right-nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    width: 400px;
+}
+.right-nav a,
+.right-nav i,
+.right-nav img {
+    color: black;
+}
+.navbar img {
+    height: 20px;
+    width: auto;
+}
+a:hover,
+.right-nav i:hover,
+.right-nav img:hover {
+    color: orange;
+}
+
+/* Dropdown Menu Styling */
+.navbar .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.navbar .dropdown-toggle {
+    font-size: 16px;
+    color: #333;
+}
+
+.navbar .dropdown-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .dropdown-item {
+    padding: 10px 20px;
+    text-decoration: none;
+    display: block;
+    color: #333;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #f1f1f1;
+    color: orange;
+}
+
+.navbar .navbar-toggler {
+    background-color: transparent !important;
+}
+
+
+/*footer css*/
+footer{
+    color:white;
+    font-size:16px;
+    background-color:black;
+    padding-top:40px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.196);
+    width: 100%;
+}
+.container{
+    width:1140px;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+}
+.footer-container{
+    width:26%;
+    padding:10px 30px;
+}
+.footer-container:first-of-type{
+    width:40%;
+    padding: 10px 0;
+}
+h3{
+    font-size:28px;
+    margin-bottom:15px;
+    text-align:center;
+}
+.footer-container p{
+    margin:auto;
+    padding:7px;
+    max-width: 300px;
+}
+
+.footer-container ul{
+    text-align:center;
+} 
+.list{
+    padding:0;
+}
+.list li{
+    width:auto;
+    text-align:center;
+    list-style-type: none;
+    padding:7px;
+    position: relative;
+}
+.list a{
+    color:white;
+    text-decoration: none;
+}
+.list li::before{
+    content: "";
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left:50%;
+    top:100%;
+    width:0;
+    height:2px;
+    background:orange;
+    
+}
+.list li:hover::before{
+    width:70px;
+}
+.social-icons{
+    text-align: center;
+    padding: 0;
+}
+.social-icons li{
+    display: inline-block;
+    text-align: center;
+    padding: 5px;
+}
+.social-icons i{
+    color:white;
+    font-size:25px;
+}
+.list a:hover{
+    color:orange;
+}
+.social-icons i:hover{
+    color:orange;
+}
+.footer-bottom{
+    background:orange;
+    text-align: center;
+    padding:10px 0;
+    margin-top:50px;
+}
+.copy-rights{
+    color:black;
+    margin:0;
+    font-size:16px;
+    padding:7px;
+}

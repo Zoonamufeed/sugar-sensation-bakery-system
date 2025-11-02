@@ -1,0 +1,140 @@
+*{
+    margin:0;
+    padding:0;
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing:border-box;
+}   
+/*signup*/
+#signup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /*display: none;*/
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+#signup-container:target {
+  display: flex;
+}
+#sign-up {
+  width: 350px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  position: relative;
+  text-align: center;
+}
+
+fieldset{
+  display: flex;
+  gap:10px;
+  flex-direction: column;
+  padding: 20px;
+  font-size:18px;
+  margin:0 auto;
+  border-radius:40px;
+}
+.signup-header{
+ font-size: 16px;
+ padding: 10px;
+ text-align: center;
+ font-weight: 600;
+}
+.close-signup{
+  position:absolute;
+  top:10px;
+  right:10px;
+  border:none;
+  background-color:white;
+  font-weight: bolder;
+  padding: 0 5px;
+  cursor: pointer;
+  color:black;   
+  text-decoration: none;
+}
+fieldset i {
+  display: flex;
+  align-items: center;
+}
+.signup-button{
+  background-color: orange;
+  border:none;
+  margin-top: 10px;
+}
+hr{
+  border:1px solid rgb(200, 197, 197);
+}
+.signup-footer{
+  text-align: center;
+  font-size: 16px;
+}
+i input{
+  font-weight: 100;
+  height: 30px;
+}
+/*login*/
+.login-container{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*display: none;*/
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#login:target{
+    display:flex;
+}
+#login{
+    width:450px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 0 30px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    font-size:18px;
+    margin:0 auto;
+}
+.login-header{
+    font-size: 16px;
+    text-align: center;
+    font-weight: 600;
+}
+.login-fieldset {
+    display: flex;
+    align-items: center;
+  }
+.login-button{
+    background-color: orange;
+    border:none;
+    margin-top: 10px;
+  }
+
+.close-login{
+    position:absolute;
+    top:10px;
+    right:10px;
+    border:none;
+    background-color:white;
+    font-weight: bolder;
+    padding: 0 5px;
+    cursor: pointer;
+    color:black;   
+    text-decoration: none;
+  }
+  
+  .login-fieldset i {
+    display: flex;
+    align-items: center;
+  }

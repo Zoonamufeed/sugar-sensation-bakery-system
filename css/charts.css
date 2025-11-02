@@ -1,0 +1,38 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: lightsalmon;
+}
+
+h1{
+    text-align: center;
+}
+
+.chart {
+    width: 50%;  
+    max-width: 400px; 
+    padding: 10px;
+}
+
+#myChart {
+    height: 400px!important;
+}
+.visual{
+    background-color: rgb(255, 212, 137);
+    display: flex;
+    justify-content: center;
+
+}
+.line{
+    width:100%;     
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+

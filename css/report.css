@@ -1,0 +1,41 @@
+
+.onesection{
+    padding:2rem;
+}
+.sectiontwo{
+    padding:2rem; 
+    
+}
+.sectiononesplit{
+    width:49%;
+    display: inline-block;
+    padding:2rem; 
+    margin: 0 auto;
+}
+.sectiononesplit2{
+    width:40%;
+    display: inline-block;
+    padding:2rem; 
+    margin-left:100px;
+}
+.h1class{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 60px;
+    padding: 2rem;
+}
+.card-title{
+    font-size: large;
+}
+.mb-1{
+    font-size: 24px;
+}
+.text-sm{
+    font-size: 18px;
+}
+select{
+    width:70px;
+    height: 20px;
+    font-size: 16px;
+}

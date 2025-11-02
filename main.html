@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet"/>
+    <title>SugarSensationBakery</title>
+</head>
+<body>
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="main.html">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#order">Order</a>
+            <a href="aboutus.html">About</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="logo-container">
+            <img src="img/sslogo.png" alt="Logo">
+        </div>
+
+        <div class="right-nav">
+            <form class="form-inline" role="search">
+                <input type="text" class="form-control" placeholder="Search" style="width:150px;" >
+                <button type="submit" class="btn btn-default">Search</button>
+            </form>
+            <a href="#shopping">
+                <i class="glyphicon glyphicon-shopping-cart"></i>
+            </a>
+            <a href="#delivery">
+                <img src="img/delivery.jpg" alt="Delivery">
+            </a>
+            <a href="#signup-container"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+            <a href="#login-container" ><span class="glyphicon glyphicon-log-in"></span> Login</a>
+        </div>
+    </nav>
+    <div class="cc">
+    <!--carousel-->
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="img/display.png" alt="cake">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/cpuff.jpg" alt="puff pastry">
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="img/cpizza.png" alt="pizza">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+      </div> 
+
+      <!-- Chatbot -->
+      <button id="chatbotButton" class="chatbot-button">
+        <img src="img/chatbot.webp" alt="Chatbot Icon">
+      </button>
+      <div id="chatbot-container" class="chat-hidden">
+        <div class="chat-container">
+          <div class="chat-header">
+            <img class="imgchatbot" src="img/chatbot.webp" alt="Chatbot">
+            <button id="closeChatbot" class="close-chatbot">X</button>
+          </div>
+          <div class="chat-box" id="chatBox"></div>
+          <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message here..." />
+            <button id="sendButton">Send</button>
+          </div>
+        </div>
+      </div>         
+ 
+      <!-- Sign up -->
+      <div id="signup-container">
+        <form id="sign-up" action="" method="post">
+            <div>
+                <p class="signup-header">Sign up with Sugar Sensation Bakery</p>
+                <a href="#" class="close-signup">X</a>
+            </div>
+            <hr>
+            <fieldset>
+                <i class="fas fa-user">
+                    <input type="text" name="name" placeholder="Full Name" required />
+                </i>
+                <i class="fa fa-phone">
+                    <input type="text" name="phone" placeholder="Phone Number" maxlength="10" minlength="10" required />
+                </i>
+                <i class="fa fa-envelope">
+                    <input type="email" name="email" placeholder="Email" required />
+                </i>
+                <i class="fa fa-lock">
+                    <input type="password" name="password" placeholder="Password" required />
+                    </i>
+                <button class="signup-button" type="submit" name="submit">Create Account</button>
+            </fieldset>
+            <hr>
+            <p class="signup-footer">Already have an account? <a href="#login-container">Login</a></p>
+        </form>
+    </div>
+
+
+    <!-- Login -->
+    <div id="login-container">
+      <form id="login" action="" method="post">
+       <div>
+          <fieldset class="login-fieldset">
+          <p class="login-header"> Login with Sugar Sensation Bakery</p>
+          <a href="#" class="close-login">X</a>         
+          </div>
+          <hr>
+          <i class="fa fa-envelope">
+              <input type="email" name="email" placeholder="Email" required />
+          </i>
+          <i class="fa fa-lock">
+              <input type="password" name="password" placeholder="Password" required />
+              </i>
+          <button class="login-button" type="submit" name="submit">Login</button>  
+          </fieldset>
+          <hr>
+          <p class="signup-footer"><a href="#signup-container">Click here</a> to register a new account</p>
+      </form>
+  </div>
+
+      <!-- Footer -->
+       <footer>
+       <div class="container">
+        <div class="footer-container">
+          <h3>Contact us</h3>
+          <p>Email: suagarsensation@gmail.com</p>
+          <p>Phone: 0812 233 433</p>
+          <p>Address: 350 Peradeniya Rd</p>
+        </div>
+        <div class="footer-container">
+          <h3>Quick Links</h3>
+          <ul  class="list">
+            <li><a href="main.html">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-container">
+          <h3>Follow us</h3>
+          <ul class="social-icons">
+          <li><a href=""><i class="fab fa-facebook"></i></a></li>
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+          <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+          </ul>
+        </div>
+      </div>
+        <div class="footer-bottom">
+          <p class="copy-rights">
+            &copy; Sugar Sensation Bakery All rights reserved<i class="fa fa-linkedin"></i></p>
+        </div>
+       </footer>
+       <script src="chatbot.js"></script>
+       
+</body>
+</html>
+
+      

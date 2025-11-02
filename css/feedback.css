@@ -1,0 +1,46 @@
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+/* Table css */
+.display-contact-table table{
+    width: 75%;
+    margin: 20px auto;
+    text-align: center;    
+}
+.display-contact-table table thead th{
+    padding:1.5rem;
+    font-size: 1.5rem;
+    background-color: rgba(255, 166, 0, 0.638);
+    color:black;
+    border:2px solid white;
+}
+ 
+.display-contact-table table td{
+    padding:1.5rem;
+    font-size: 1.5rem;
+    color:black;
+}
+ 
+.display-contact-table table td:first-child{
+    padding:0;
+}
+ 
+.display-contact-table table tr:nth-child(even){
+    background-color: #eee;
+}
+ 
+.display-contact-table .empty{
+    margin-bottom: 2rem;
+    text-align: center;
+    background-color: #eee;
+    color:black;
+    font-size: 1.5rem;
+    padding:1.5rem;
+}

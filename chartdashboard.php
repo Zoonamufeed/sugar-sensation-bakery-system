@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dasboard</title>
+    <!-- <link href="css/charts.css" rel="stylesheet"/> -->
+</head>
+<body>
+    <div class="chart">
+        <h1>Todays Order status </h1>
+        <canvas id="myChart"></canvas>
+    </div>
+    
+    <h1>Hello</h1>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script> 
+
+</body>
+</html>
